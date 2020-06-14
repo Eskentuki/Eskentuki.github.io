@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-portfolio Mussatay Yeskendir</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="flex">
+        <button class="cv">CV</button>
+        <div id="cv"><embed src="pdf/CV.pdf" style="width: 100%; height: 100vh;"></embed></div>
+        <button class="cl">Covel Letter</button>
+        <div id="cl"><embed src="pdf/Cover Letter Mussatay Yeskendir IT-1910.pdf" style="width: 100%; height: 100vh;"></div>
+        <button class="swot">SWOT</button>
+        <div id="swot"><embed src="pdf/SWOT Analysis of Magnum Cash&Carry site_mobile app by Mussatay Yeskendir IT-1910.pdf" style="width: 100%; height: 100vh;"></div>
+        <button class="vt">VT</button>
+        <div id="vt"><iframe width="560" height="315" src="https://www.youtube.com/embed/EPSAZFd8IAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+</body>
+<script>
+    $('#cv').hide();
+    $('#cl').hide();
+    $('#swot').hide();
+    $('#vt').hide();
+    //////////////////////////
+    $('.cv').click(function(){
+        $('#cv').slideToggle();
+        $('#cl').hide();
+        $('#swot').hide();
+        $('#vt').hide();
+    });
+    $('.cl').click(function(){
+        $('#cl').slideToggle();
+        $('#cv').hide();
+        $('#swot').hide();
+        $('#vt').hide();
+    });
+    $('.swot').click(function(){
+        $('#swot').slideToggle();
+        $('#cl').hide();
+        $('#cv').hide();
+        $('#vt').hide();
+    });
+    $('.vt').click(function(){
+        $('#vt').slideToggle();
+        $('#cl').hide();
+        $('#swot').hide();
+        $('#cv').hide();
+    });
+</script>
+</html>
